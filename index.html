@@ -1,0 +1,71 @@
+<b class="wIT" id='XDD' style='background-color:rgb(235, 188, 188);'><i>Welcome!</i></b>
+
+<p> <b class="wIT"><i>Your name:</i></b><input id="name" class='default-input' /><button id='butt'>ENTER</button><img id='aI' hidden='true' src='https://www.shareicon.net/data/12x12/2017/01/08/869360_sound_512x512.png'></p>
+
+<i>
+    <ul>
+        <li class='information-textOne'>Welcome to IT site to learn</li>
+        <li> My name is xTime</li>
+        <a class='hL' href="http://google.com">Here is my project site </a>
+    </ul>
+
+
+</i>
+<script>
+     let f = function () {
+        let message = document.getElementById('name')
+        var NameEl = message;
+        if (message.value == "x") { return }
+        if (message.value == "admin") {
+            let confiSet = confirm("You wanna to switch on Admin panel?")
+            if (confiSet == true) {
+                NameEl.className = "admin-input"
+                document.getElementById('butt').innerHTML = "YOU IN ADMIN PANEL"
+                document.getElementById('aI').hidden = false
+                let code = Math.floor(Math.random() * 30 * 10 * 200);
+                console.log("Welcome " + message.value + " here is your code " + "GETUPPLUS-" + code);
+            }
+        }
+
+        window.alert("Your name is " + message.value + ". Nice to meet you " + message.value)
+
+
+    }
+
+    document.getElementById('butt').onclick = function() {myButt()};
+    function myButt() {
+        f()
+        }
+</script>
+
+<style>
+    .information-textOne {
+        width: 100px;
+        background-color: rgb(121, 213, 241);
+        color: royalblue;
+    }
+
+    .wIT {
+        font-size: 30px;
+        color: rgb(31, 187, 91);
+    }
+    .default-input {
+        border-color: grey;
+        border-width: 10px;
+    }
+    .admin-input {
+        border: red 10px solid;
+    }
+    body {
+        background-image: url("https://support.discord.com/hc/article_attachments/360013500032/nitro_gif.gif");
+    }
+    .hL {
+        border-left: yellow 5px double;
+        border-top: red 6px solid;
+        border-bottom: blue 5px solid;
+        background-color: white;
+        border-right: yellow 5px double;
+        opacity: 10%;
+        font-size: 10px;
+    }
+</style>
