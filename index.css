@@ -34,10 +34,11 @@
     background-color: gold;
 }
 body {
-    background-color: gray;
+    background-image: url(https://wallpapercave.com/wp/PO6cjaY.jpg);
 }
 .right-coord i {
-    width: 20px;
+    width: 40px;
+    height: 40px;
     margin: 430px;
     text-align: center;
     background-color: rgb(14, 60, 147);
