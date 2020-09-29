@@ -36,3 +36,11 @@
 body {
     background-color: gray;
 }
+.right-coord i {
+    width: 20px;
+    margin: 430px;
+    text-align: center;
+    background-color: rgb(14, 60, 147);
+    padding: 10px;
+    border: 1px solid black;
+}
