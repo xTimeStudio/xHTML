@@ -1,0 +1,38 @@
+.coordCalculator {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 20px;
+    border: 1px solid black;
+}
+.coordCalculator .operations-block button {
+    width: 40px;
+    margin: 20px;
+    background-color: darkgoldenrod;
+}
+.coordCalculator .inputs-block .input-block {
+    display: inline-block;
+    padding: 10px;
+    border: gold 3px sold;
+}
+.coordCalculator .inputs-block .input-block label {
+    display: block;
+    border-radius: 30px;
+    border: ridge 3px gold;
+    background-color: green;
+}
+.empty-numbers {
+    border: red 5px double;
+}
+.coordCalculator .name-calculator-text b {
+    border: goldenrod 3px solid;
+    background-color: gold;
+}
+.coordCalculator .name-calculator-text i {
+    border: goldenrod 3px solid;
+    background-color: gold;
+}
+body {
+    background-color: gray;
+}
