@@ -1,97 +1,41 @@
 <html>
 <head>
-    <link rel="shortcut icon" href="http://htmlbook.ru/favicon.ico"> <title>Discord</title>   
+    <meta charset="utf-8" />
+    <title>Cooord</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel = "icon" href =  
+    "https://www.meme-arsenal.com/memes/85d80dec7049263f810b434f6a9ad93e.jpg" 
+            type = "image/x-icon"> 
 </head>
-<b class="wIT" id='XDD' style='background-color:rgb(235, 188, 188);'><i>Welcome!</i></b>
-
-<p> <b class="wIT"><i>Your name:</i></b><input id="name" class='default-input' /><button id='butt'>ENTER</button><img id='aI' hidden='true' src='https://www.shareicon.net/data/12x12/2017/01/08/869360_sound_512x512.png'></p>
-
-<i>
-    <ul>
-        <li class='information-textOne'>Welcome to IT site to learn</li>
-        <li> My name is xTime</li>
-        <a class='hL' href="http://google.com">Here is my project site </a>
-    </ul>
-
-
-</i>
-<table border="10" class="tab">
-<thead>
-    <th>List</th>
-     <th>Count</th>
-</thead>
-<tbody><td>Nitro Classic <img class='imInTab' src='https://support.discord.com/hc/article_attachments/360013500032/nitro_gif.gif'></td><td class='cou'>5</td></tbody>
-<tfoot></tfoot>
-</table>
-
-<script>
-     let f = function () {
-        let message = document.getElementById('name')
-        var NameEl = message;
-        if (message.value == "x") { return }
-        if (message.value == "admin") {
-            let confiSet = confirm("You wanna to switch on Admin panel?")
-            if (confiSet == true) {
-                NameEl.className = "admin-input"
-                document.getElementById('butt').innerHTML = "YOU IN ADMIN PANEL"
-                document.getElementById('aI').hidden = false
-                let code = Math.floor(Math.random() * 30 * 10 * 200);
-                console.log("Welcome " + message.value + " here is your code " + "GETUPPLUS-" + code);
-            }
-        }
-
-        window.alert("Your name is " + message.value + ". Nice to meet you " + message.value)
-    
-
-    }
-
-    document.getElementById('butt').onclick = function() {myButt()};
-    function myButt() {
-        f()
-        }
-</script>
-
-<style>
-    .information-textOne {
-        width: 100px;
-        background-color: rgb(121, 213, 241);
-        color: royalblue;
-    }
-
-    .wIT {
-        font-size: 30px;
-        color: rgb(31, 187, 91);
-    }
-    .default-input {
-        border-color: grey;
-        border-width: 10px;
-    }
-    .admin-input {
-        border: red 10px solid;
-    }
-    body {
-        background-image: url("https://i.redd.it/op3cqbe3uzt21.jpg");
-    }
-    .hL {
-        border-left: yellow 5px double;
-        border-top: red 6px solid;
-        border-bottom: blue 5px solid;
-        background-color: white;
-        border-right: yellow 5px double;
-        opacity: 10%;
-        font-size: 10px;
-    }
-    .tab {
-        border: forestgreen 10px double;
-        width: 100px;
-        text-indent: 20px;
-        background-color: azure;
-    }
-    .imInTab {
-        border: blueviolet 10px dotted;
-    }
-    .cou {
-        border: firebrick 20px dotted;
-    }
-</style>
+<body>
+    <div class="coordCalculator">
+        <div class='name-calculator-text'>
+        <b>Coord Calculator</b>
+        <i>>(+.-)></i>
+        </div>
+        <div class="operations-block">
+            <button id='buttonPlus'>+</button>
+            <button id="buttonMinus">-</button>
+            <button id="buttonMultiply">*</button>
+            <button id="buttonDevide">/</button>
+        </div>
+        <div class="seperator">
+            <hr />
+        </div>
+        <div class="inputs-block">
+        <div class="input-block">
+            <b><label>Number 1</label></b>
+            <input type="number" id='number1' />
+        </div>
+        <div class="input-block">
+            <b><label>Number 2</label></b>
+            <input type="number" id="number2" />
+        </div>
+        <div class='input-block-result'>
+            <input type="text" id='result-text' value='result will be here' />
+        </div>
+        </div>
+    </div>
+<script src='index.js'></script>
+</body>
 </html>
